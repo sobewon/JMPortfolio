@@ -58,7 +58,7 @@
   }
   
   main {
-    display: flex;
+    display: inline;
     flex-wrap: wrap;
   }
   
@@ -75,9 +75,43 @@
   .selfie > img {
     width: 50%;
   }
+  
+  .mainProduct {
+    background-color: gray;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .mainCard {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--borderrad1);
+    background-image: linear-gradient(violet,purple);
+    padding: 10px;
+    flex: 0 0 400px;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 5px #292929;
+    margin: 20px;
+  }
+
+  .mainCard > header {
+    border-radius: var(--borderrad1);
+    padding: 20px;
+  }
+  
+  .mainCard > p {
+    text-align: center;
+  }
+  
+  .mainCard > a > img {
+    width: 100%;
+  }
+
 
   .products {
-    flex: 1;
+    
     background-color: gray;
     padding: 50px;
     display: flex;
@@ -93,7 +127,7 @@
     padding: 10px;
     flex: 0 0 300px;
     transform: rotate(8deg);
-    box-shadow: 10px 10px 5px #aaaaaa;
+    box-shadow: 10px 10px 5px #292929;
     margin: 20px;
   }
   
@@ -106,7 +140,7 @@
     text-align: center;
   }
   
-  .card > img {
+  .card > a > img {
     width: 100%;
   }
   
@@ -115,5 +149,25 @@
     nav {
       flex-direction: column;
     }
+  }
+
+  .about{
+    
+    background-color: rgb(253, 0, 0);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+  .contact{
+    
+    background-color: gray;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
   }
   
