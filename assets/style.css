@@ -67,7 +67,7 @@
     bottom: 0;
     padding: 20px;
     text-align: center;
-    background: var(--dark);
+    background: var(--peach);
     color: var(--white);
     margin-top: auto;
   }
@@ -88,7 +88,7 @@
     border-style: solid;
     border-width: 1px;
     border-radius: var(--borderrad1);
-    background-image: linear-gradient(violet,purple);
+    background-image: linear-gradient(var(--yellowHat),var(--peach));
     padding: 10px;
     flex: 0 0 400px;
     transform: rotate(8deg);
@@ -123,7 +123,7 @@
     border-style: solid;
     border-width: 1px;
     border-radius: var(--borderrad1);
-    background-image: linear-gradient(violet,purple);
+    background-image: linear-gradient(var(--yellowHat),var(--peach));
     padding: 10px;
     flex: 0 0 300px;
     transform: rotate(8deg);
@@ -141,7 +141,8 @@
   }
   
   .card > a > img {
-    width: 100%;
+    width: 300px;
+    height: 450px;
   }
   
   @media screen and (max-width: 768px) {
@@ -153,7 +154,7 @@
 
   .about{
     
-    background-color: rgb(253, 0, 0);
+    background-color: var(--peach);
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +164,7 @@
 
   .contact{
     
-    background-color: gray;
+    background-color: var(--yellowHat);
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
