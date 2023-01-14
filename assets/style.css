@@ -2,6 +2,8 @@
     /* declare a variable with `--` syntax */
     --dark: #13293d;
     --white: #fff;
+    --peach: #d8a47f;
+    --yellowHat: #f1d977;
     --borderrad1: 50px;
   }
   
@@ -37,18 +39,22 @@
   
   nav {
     display: flex;
+    justify-content: center;
     background-color: #d8a47f;
   }
   
   nav a {
     color: var(--dark);
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    */
     padding: 14px 20px;
+    font: 'Franklin Gothic Medium', '20px';
     text-decoration: none;
     text-align: center;
   }
   
   nav a:hover {
-    background-color: var(--white);
+    background-color: var(--yellowHat);
   }
   
   main {
@@ -66,6 +72,10 @@
     margin-top: auto;
   }
   
+  .selfie > img {
+    width: 50%;
+  }
+
   .products {
     flex: 1;
     background-color: gray;
