@@ -8,13 +8,8 @@ html
 css
 
 First screenshot displaying the full width site.
-![Full size website](/JMPortfolio/assets/Images/site%20scnsht%20full%20size.png)
+![Full size website](./assets/Images/fullsize.png)
 
 
 Second Screenshot displaying the shrunken width site.
-![Shrunked width site](/JMPortfolio/assets/Images/Site%20shrunken%20width.png)
-
-
-
-
-
+![Shrunked width site](./assets/Images/shrunksize.png)
