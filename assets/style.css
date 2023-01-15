@@ -1,15 +1,16 @@
 :root {
-    /* declare a variable with `--` syntax */
     --dark: #13293d;
     --white: #fff;
-    --peach: #d8a47f;
+    --peach: #fdc69f;
     --yellowHat: #f1d977;
     --borderrad1: 50px;
+    --bgColor: rgb(255, 233, 191);
   }
   
   body {
-    background: #aaaaaa;
+    background: var(--bgColor);
     font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,36 +20,39 @@
   h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
     justify-content: center;
     text-align: center;
+    background-color: var(--peach);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--borderrad1);
   }
 
-  h2 {
+  /* h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-  }
+  } */
   
   header {
     justify-content: center;
     text-align: center;
-    /*padding: 40px;
-    text-align: center;
-    background: var(--dark);
-    color: var(--white); */
   }
   
   nav {
     display: flex;
     justify-content: center;
-    background-color: #d8a47f;
+    background-color: var(--peach);
+    border-style: solid;
+    border-width: 1px;
   }
   
   nav a {
     color: var(--dark);
-    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    */
     padding: 14px 20px;
-    font: 'Franklin Gothic Medium', '20px';
+    font-size: 20px;
     text-decoration: none;
     text-align: center;
   }
@@ -63,13 +67,17 @@
   }
   
   footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
+    /*width: 100%; */
+    border-style: solid;
+    border-width: 1px;
     text-align: center;
     background: var(--peach);
-    color: var(--white);
-    margin-top: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-left-radius: var(--borderrad1);
+    border-bottom-right-radius: var(--borderrad1);
+    /*border-radius: var(--borderrad1); */
+    
   }
   
   .selfie > img {
@@ -77,7 +85,7 @@
   }
   
   .mainProduct {
-    background-color: gray;
+    background-color: var(--bgColor);
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +120,7 @@
 
   .products {
     
-    background-color: gray;
+    background-color: var(--bgColor);
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -153,19 +161,31 @@
   }
 
   .about{
-    
+    text-align: center;
     background-color: var(--peach);
-    padding: 50px;
-    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    border-top-left-radius: var(--borderrad1);
+    border-top-right-radius: var(--borderrad1);
+    padding: 10px;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 
   }
-
+  .about > ul {
+    text-align: left;
+    display: inline-block;
+  }
+  
   .contact{
     
     background-color: var(--yellowHat);
-    padding: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

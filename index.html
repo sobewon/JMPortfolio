@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- head for  stylesheet -->
 <head>
   <title>CSS Box Styling</title>
   <meta charset="UTF-8" />
@@ -15,9 +15,11 @@
     <p>
       Look it's me!
     </p>
+    <!-- First picture on page below Name -->
     <section class="selfie">
         <img src="./assets/images/NoYotsubato.png" alt="Wait that's not me!" />
     </section>
+    <!-- Nav buttons area, this contains links to areas on the same  page -->
     <nav>
         <a href="#aboutMe">About Me</a>
         <a href="#works">Works</a>
@@ -27,44 +29,54 @@
 
   <!-- Body -->
   <main>
-    <!-- Work Cards -->
+    <!-- Work/project Cards -->
     <div class="mainProduct" id="mainWork">
+        <!-- Main card (Larger than the rest) It deserves it's own div for styling purposes -->
         <section class="mainCard">
             <header>1st work</header>
-            <a href="https://m.media-amazon.com/images/I/51okJqZUejL.jpg"><img src="https://m.media-amazon.com/images/I/51okJqZUejL.jpg" alt="1st main work" /></a>
+            <a href="https://m.media-amazon.com/images/I/51okJqZUejL.jpg"><img src="https://m.media-amazon.com/images/I/51okJqZUejL.jpg" alt="1st main work temp img" /></a>
             <p>This is the first "Yotsubato" manga (Replacing project 1)</p>
         </section>
     </div>
+    <!-- rest of the works/projects can all be lumped together below -->
     <div class="products" id="works">
       <section class="card">
         <header>2nd work</header>
-        <a href="http://prodimage.images-bn.com/pimages/9780316073899_p0_v1_s1200x630.jpg"><img src="http://prodimage.images-bn.com/pimages/9780316073899_p0_v1_s1200x630.jpg" alt="2nd work" /></a>
+        <a href="http://prodimage.images-bn.com/pimages/9780316073899_p0_v1_s1200x630.jpg"><img src="http://prodimage.images-bn.com/pimages/9780316073899_p0_v1_s1200x630.jpg" alt="2nd work temp img" /></a>
         <p>This is the second "Yotsubato" manga (Replacing project 2)</p>
       </section>
       <section class="card">
         <header>3rd work</header>
-        <a href="https://m.media-amazon.com/images/I/51Ooe6cnlCL._AC_SY780_.jpg"><img src="https://m.media-amazon.com/images/I/51Ooe6cnlCL._AC_SY780_.jpg" alt="3rd work" /></a>
+        <a href="https://m.media-amazon.com/images/I/51Ooe6cnlCL._AC_SY780_.jpg"><img src="https://m.media-amazon.com/images/I/51Ooe6cnlCL._AC_SY780_.jpg" alt="3rd work temp img" /></a>
         <p>This is the third "Yotsubato" manga (Replacing project 3)</p>
       </section>
       <section class="card">
         <header>4th work</header>
-        <a href="https://m.media-amazon.com/images/I/51FoEcNHu-L._AC_SY780_.jpg"><img src="https://m.media-amazon.com/images/I/51FoEcNHu-L._AC_SY780_.jpg" alt="4th work" /></a>
+        <a href="https://m.media-amazon.com/images/I/51FoEcNHu-L._AC_SY780_.jpg"><img src="https://m.media-amazon.com/images/I/51FoEcNHu-L._AC_SY780_.jpg" alt="4th work temp img" /></a>
         <p>This is the third "Yotsubato" manga (Replacing project 4)</p>
       </section>
     </div>
-
+            <!-- about me section. Nothing special here, just text -->
     <div class="about" id="aboutMe">
-        <p>about me section</p>
+        <p>Hello, my name is John!</p>
+        <p>My hobbies include:</p>
+        <ul>
+            <li>Cars</li>
+            <li>Video Games</li>
+            <li>Anime/Manga</li>
+        </ul>
 
     </div>
-
+            <!-- contact section. Only text here for now, possibly add links for email and such in the future -->
     <div class="contact" id="contactSection">
-        <p>contact information section</p>
-
+        <ul>
+            <li>Email: Sobewon@gmail.com</li>
+            <li>Phone: 813-555-5555</li>
+        </ul>
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- footer for signature -->
   <footer>
     <h3>
       Made by John, for John, with John (featuring John)
